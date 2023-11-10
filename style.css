@@ -27,13 +27,13 @@ body{
     width: 50px;
     margin-top: 10px;
     margin-left: 50px;
+    margin-right: 200px;
 }
 
 
 .main-nav li a {
     color:  #1003A3;
     display: block;
-    padding: 1rem;
     text-decoration: none;
     font:bold;
     font-size: 18px;
@@ -41,11 +41,7 @@ body{
     margin-right: 50px;
 } 
 
-.main-nav li a:hover{
-    background-color: #1003A3;
-    color: #fff;
-    transition: all 0.5s ease;
-}
+
 
 
 
@@ -84,14 +80,22 @@ body{
     width: 100%;
 }
 
-.main-nav li:hover ul {
-    display: block;
-    transition: all 0.5s ease;  
+.main-nav li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #1003A3;
+    transition: 0.15s ease-in-out;
 }
 
-#home{
-    margin-left: 200px; 
+.main-nav li a:hover::after {
+    width: 60%;
 }
+
+
 
 .open-menu, .close-menu{
     position: absolute;
@@ -126,29 +130,22 @@ body{
     align-items: center;
 }
 
-#main-text h1{
+#DRX{
     color: #1003A3;
     font-size: 3.9285714285714284rem;
     line-height: 4.785714285714286rem;
     margin-bottom: 2px;
-    
-    
-    
+    text-decoration: none;   
 }
 
-#main-text h1:hover{
-    text-decoration: underline;
-    
-}
+
 #seconde-title{
-   
-    
-  
     margin-bottom: 2px;
-    text-transform: uppercase;
-    
+    text-transform: uppercase;   
     text-align: center;
 }
+
+
 #pres-text{
     padding-top: 30px;
     color: #1003A3;
